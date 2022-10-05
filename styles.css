@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 16px 0;
+}
+
+#title {
+    font-size: 40px;
+}
+
+#reset {
+    font-size: 24px;
+}
+
+#container {
+    display: grid;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    max-width: 960px;
+}
+
+.square {
+    display: flex;
+    border: 1px solid black;
+}
+
