@@ -19,9 +19,18 @@ function createDiv (num) {
 
 createDiv(16);
 
+function hover(e) {
+    e.target.classList.add('hover');
+}
+
+const squares = Array.from(document.querySelectorAll('.square'));
+squares.forEach(square => square.addEventListener('mouseover', hover));
+
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
     const size = prompt('How many rows/columns?');
     document.getElementById('container').innerHTML = '';
     createDiv(size);
+    const squares = Array.from(document.querySelectorAll('.square'));
+    squares.forEach(square => square.addEventListener('mouseover', hover));
 });
